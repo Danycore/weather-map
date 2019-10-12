@@ -9,16 +9,15 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { MapComponent } from './map/map.component';
 import { WeatherComponent } from './weather/weather.component';
-import { SitesComponent } from './sites/sites.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     MapComponent,
-    WeatherComponent,
-    SitesComponent
-  ],
+    WeatherComponent
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,
