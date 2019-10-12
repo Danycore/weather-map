@@ -32,7 +32,7 @@ export class WeatherComponent implements OnInit,OnChanges  {
     + '&lon=' + this.longitude
     + '&units=metric'
     + '&lang=en'
-    + '&appid=6a145f2420c05499d548551c124b3ce7'; // your api key here
+    + '&appid=6a145f2420c05499d548551c124b3ce7'; // <-- your api key here
   
     this.http.get(url).subscribe((data: any) => {
       console.log(data);
