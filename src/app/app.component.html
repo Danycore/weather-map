@@ -1,11 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-menu></app-menu>
+<!--<app-menu></app-menu>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                        <a class="nav-link" href="#"><b>Weather-Map</b> <span class="sr-only">(current)</span>
+                            <img src="/images/temp.png" width="30" height="30" alt="">
+                        </a>
+                      </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>Latitude:</b> {{map.lat}}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>Latitude:</b> {{map.lat}}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>Longitude:</b> {{map.lng}}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>City:</b> {{weather.city}}<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><b>Temperature:</b> {{weather.temp}}&#8451;<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          
+        </div>
+      </nav>
 <app-map #map></app-map>
-Latitude: {{map.lat}}<br>
-Longitude: {{map.lng}}<br>
-<app-weather [latitude]="map.lat" 
+<app-weather #weather 
+[latitude]="map.lat" 
 [longitude]="map.lng"
 ></app-weather>
+
 
 
 

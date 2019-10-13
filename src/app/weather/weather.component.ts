@@ -1,4 +1,4 @@
-import { Component, OnChanges ,OnInit, Input } from '@angular/core';
+import { Component, OnChanges ,OnInit, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
@@ -14,6 +14,7 @@ export class WeatherComponent implements OnInit,OnChanges  {
 
   @Input() latitude: string;
   @Input() longitude: string;
+  
    
   
   
