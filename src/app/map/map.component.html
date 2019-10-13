@@ -3,8 +3,13 @@
 [longitude]="lng" 
 [zoom]="zoom" 
 (mapClick)="mapClicked($event)"
-style="height: 800px" >
-<agm-marker [latitude]="lat" [longitude]="lng">    
+style="height: 800px" 
+[fullscreenControl]='true' [mapTypeControl]='true'>
+<agm-marker 
+[latitude]="lat" 
+[longitude]="lng"
+(markerClick)="selectMarker($event)"
+>    
      
 </agm-marker>
 </agm-map>
