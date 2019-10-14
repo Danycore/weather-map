@@ -13,20 +13,24 @@ import { WeatherComponent } from './weather/weather.component';
 
 
 
+
 @NgModule({
+  
   declarations: [
     AppComponent,
     MapComponent,
-    WeatherComponent
+    WeatherComponent,
+    
     
     ],
   imports: [
     BrowserModule,
     FormsModule,
    // HttpModule,
+   ReactiveFormsModule,
     HttpClientModule,
     AgmCoreModule.forRoot({ 
-      apiKey: 'AIzaSyCo5eHkeqhurDSk1LwGLQk0D2YUI8pbKhM'// Please use your own key here !!
+      apiKey: 'YOUR_API_KEY'//<--- Please use your own key here !!
     })
     
   ],
